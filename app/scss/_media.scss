@@ -2,6 +2,11 @@
   .header-bottom{
     background-size: 40%;
   }
+  .conditions{
+    &__item::after{
+      display: none;
+    }
+  }
 }
 
 

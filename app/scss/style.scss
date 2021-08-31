@@ -83,6 +83,7 @@
   &__content{
     min-width: 576px;
     max-width: 600px;
+    height: calc(100vh - 200px);
   }
   &__content-subtitle{
     color: #8E8E8E;
@@ -117,6 +118,162 @@
     padding: 13px 26px;
     color: #fff;
     cursor: pointer;
+    width: 205px;
+  }
+}
+
+
+.conditions{
+  padding: 90px 0 40px;
+  &__item{
+    max-width: 270px;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+  &__item-img{
+    max-width: 582px;
+    width: 100%;
+    margin-bottom: 90px;
+  }
+  &__item-title{
+    margin-bottom: 15px;
+  }
+}
+
+.conditions__items{
+  &:nth-child(1){
+    & .conditions__item{  
+     &:nth-child(1){
+      transform: translateX(140px);
+      &::after{
+        background-image: url('../images/conditions_line/1.svg');
+        width: 164px;
+        height: 111px;
+        top: 0;
+        left: -35px;
+      }
+     }
+     &:nth-child(2){
+        &::after{
+          background-image: url('../images/conditions_line/2.svg');
+          width: 314px;
+          height: 81px;
+          top: 0;
+          left: -36px;
+        }
+     }
+     &:nth-child(3){
+      transform: translateX(-30px);
+      padding-left: 10px;
+      &::after{
+        background-image: url('../images/conditions_line/3.svg');
+        width: 374px;
+        height: 61px;
+        top: 0;
+        left: -28px;
+      }
+     }
+     &:nth-child(4){
+      &::after{
+        background-image: url('../images/conditions_line/4.svg');
+        width: 313px;
+        height: 66px;
+        top: 0;
+        left: -36px;
+      }
+     }
+     &:nth-child(5) {
+       transform: translate(140px, -30px);
+       &::after {
+         background-image: url('../images/conditions_line/5.svg');
+         width: 205px;
+         height: 59px;
+         top: -25px;
+         left: -36px;
+       }
+     }
+    }
+  }
+  &:nth-child(2){
+    margin: 0 50px;
+    & .conditions__item {
+     &:nth-child(1) {
+       transform: translateY(-90px);
+       &::after {
+         background-image: url('../images/conditions_line/6.svg');
+         width: 99px;
+         height: 124px;
+         top: 10px;
+         left: -36px;
+       }
+     }
+     &:nth-child(3) {
+       &::after {
+         background-image: url('../images/conditions_line/7.svg');
+         width: 99px;
+         height: 100px;
+         top: -76px;
+         left: -36px;
+       }
+     }
+    }
+  }
+  &:nth-child(3) {
+    & .conditions__item {
+      &:nth-child(1){
+        transform: translateX(-100px);
+        &::after {
+          background-image: url('../images/conditions_line/8.svg');
+          width: 90px;
+          height: 112px;
+          top: 0px;
+          left: -94px;
+        }
+      }
+      &:nth-child(2) {
+        &::after {
+          background-image: url('../images/conditions_line/9.svg');
+          width: 221px;
+          height: 25px;
+          top: 11px;
+          left: -226px;
+        }
+      }
+      &:nth-child(3) {
+        transform: translateX(90px);
+        &::after {
+          background-image: url('../images/conditions_line/10.svg');
+          width: 212px;
+          height: 68px;
+          top: -44px;
+          left: -216px;
+        }
+      }
+       &:nth-child(4) {
+         &::after {
+           background-image: url('../images/conditions_line/11.svg');
+           width: 124px;
+           height: 99px;
+           top: -63px;
+           left: -135px;
+         }
+       }
+      &:nth-child(5) {
+        transform: translate(-100px, -30px);
+        &::after {
+          background-image: url('../images/conditions_line/12.svg');
+          width: 177px;
+          height: 51px;
+          top: -13px;
+          left: -185px;
+        }
+      }
+    }
   }
 }
 
