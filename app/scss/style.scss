@@ -4,7 +4,71 @@
 @import 'libs';
 @import 'global';
 
+.header{
+  background-color: #161616;
+}
 
+.header-top{
+  padding: 7px 0;
+  &__menu-btn{
+    display: none;
+    width: 46px;
+    height: 46px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #fff;
+    padding: 0;
+    &.header-top__menu-btn--active{
+      &:before,
+      &:after {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      &:before{
+        transform: rotate(-45deg);
+      }
+      &:after{
+        transform: rotate(45deg);
+      }
+      span{
+        height: 0;
+      }
+    }
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      width: 18px;
+      height: 2px;
+      background-color: #161616;
+    }
+    &:before {
+      top: 16px;
+    }
+    &:after {
+      bottom: 16px;
+    }
+    span {
+      width: 18px;
+      height: 2px;
+      background-color: #161616;
+    }
+  }
+  &__btn{
+    margin-right: 30px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    padding: 13px 26px;
+    color: #fff;
+
+  }
+}
 
 
 
