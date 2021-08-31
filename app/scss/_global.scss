@@ -10,7 +10,6 @@ body{
   font-size: 55px;
   line-height: 60px;
   @extend %gothamPro-700;
-  max-width: 420px;
   span{
     @extend %gothamPro-300;
   }

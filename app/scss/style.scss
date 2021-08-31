@@ -125,6 +125,12 @@
 
 .conditions{
   padding: 90px 0 40px;
+  background-image: url('../images/conditions-bg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: auto;
+  height: 100%;
   &__item{
     max-width: 270px;
     position: relative;
@@ -142,6 +148,7 @@
   }
   &__item-title{
     margin-bottom: 15px;
+    max-width: 420px;
   }
 }
 
@@ -274,6 +281,37 @@
         }
       }
     }
+  }
+}
+
+.peculiarities{
+  padding: 90px 0;
+  background: linear-gradient(265.53deg, #A138A3 -9.61%, #272151 104.3%);
+  background-image: url('../images/peculiarities-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &__title{
+    margin-bottom: 55px;
+  }
+  &__item{
+    width: 100%;
+    background: #161616;
+    border: 1px solid #2E2E2E;
+    border-radius: 8px;
+    height: 96px;
+    padding: 18px 20px 18px 32px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    &--color{
+      background-color: #fff;
+      color: #000;
+    }
+  }
+  &__item-img{
+    margin-right: 30px;
   }
 }
 
