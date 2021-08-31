@@ -1,5 +1,21 @@
 body{
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 18px;
+  line-height: 24px;
   color: #fff;
+  @extend %gothamPro-400;
+  background-color: #161616;
+}
+
+.container-xll{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 1500px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl .container-xll{
+    max-width: 1410px;
+  }
 }

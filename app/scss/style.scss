@@ -6,6 +6,10 @@
 
 .header{
   background-color: #161616;
+  background-image: url('../images/header-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
 }
 
 .header-top{
@@ -66,10 +70,54 @@
     border-radius: 8px;
     padding: 13px 26px;
     color: #fff;
-
   }
 }
 
-
+.header-bottom{
+  height: calc(100vh - 68px);
+  padding-top: 60px;
+  background-image: url('../images/header-bottom_img.png');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 100% 30%; 
+  &__content{
+    min-width: 576px;
+    max-width: 600px;
+  }
+  &__content-subtitle{
+    color: #8E8E8E;
+    margin-bottom: 14px;
+  }
+  &__content-title{
+    font-size: 55px;
+    line-height: 65px;
+    @extend %gothamPro-700;
+    span{
+      @extend %gothamPro-300;
+    }
+    margin-bottom: 24px;
+  }
+  &__content-name{
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 7px;
+    span{
+      color: $plum;
+    }
+  }
+  &__content-text{
+    margin-bottom: 50px;
+    span{
+      @extend %gothamPro-700;
+    }
+  }
+  &__content-link{
+    border: 2px solid $plum;
+    border-radius: 8px;
+    padding: 13px 26px;
+    color: #fff;
+    cursor: pointer;
+  }
+}
 
 @import 'media';
