@@ -1,3 +1,9 @@
+@media (max-width: 1500px){
+  .introduction__item{
+    height: 150px;
+  }
+}
+
 @media (max-width: 1200px){
   .header-bottom{
     background-size: 40%;
@@ -6,6 +12,9 @@
     &__item::after{
       display: none;
     }
+  }
+  .introduction__item {
+    height: 120px;
   }
 }
 

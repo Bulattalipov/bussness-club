@@ -465,6 +465,7 @@
 }
 
 .calendar{
+  padding: 120px 0;
   &__items{
     display: flex;
     justify-content: flex-end;
@@ -545,6 +546,29 @@
         background-color: #A138A3;
       }
     }
+  }
+}
+
+.introduction{
+  padding: 80px 0;
+  background-image: url('../images/introduction-bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  &__title{
+    margin-bottom: 64px;
+  }
+  &__item{
+    padding: 30px;
+    background-color: #161616;
+    display: flex;
+    align-items: flex-start;
+    border-radius: 30px;
+    height: 130px;
+    margin-bottom: 30px;
+  }
+  &__item-img{
+    margin-right: 18px;
   }
 }
 
