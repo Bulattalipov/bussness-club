@@ -23,6 +23,10 @@ body{
   position: absolute;
 }
 
+.plumColor{
+  color: $plum;
+  @extend %gothamPro-700;
+}
 
 .container-xll{
   width: 100%;
