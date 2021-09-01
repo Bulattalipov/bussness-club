@@ -28,6 +28,18 @@ body{
   @extend %gothamPro-700;
 }
 
+.btn{
+  border: 2px solid #fff;
+  border-radius: 8px;
+  padding: 10px 26px;
+  color: #fff;
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
 .container-xll{
   width: 100%;
   padding-right: 15px;

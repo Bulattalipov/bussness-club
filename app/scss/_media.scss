@@ -33,12 +33,18 @@
     background-image: none;
     padding: 150px 0;
   }
+  .order__title{
+    margin-bottom: 30px;
+  }
 }
 
 
 @media (max-width: 768px){
   .residents-item{
     width: 210px;
+  }
+  .footer__btn{
+    margin-bottom: 20px;
   }
 }
 
